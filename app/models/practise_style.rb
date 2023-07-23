@@ -1,0 +1,2 @@
+class PractiseStyle < ApplicationRecord
+end

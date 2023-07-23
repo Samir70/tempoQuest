@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Practise styles</h1>
+
+<div id="practise_styles">
+  <% @practise_styles.each do |practise_style| %>
+    <%= render practise_style %>
+    <p>
+      <%= link_to "Show this practise style", practise_style %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New practise style", new_practise_style_path %>
