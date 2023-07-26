@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  target_tempo: 1
+  cur_tempo: 1
+  backing_track: MyString
+  style: one
+
+two:
+  title: MyString
+  content: MyText
+  target_tempo: 1
+  cur_tempo: 1
+  backing_track: MyString
+  style: two

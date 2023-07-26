@@ -10,12 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
-  create_table "practiseStyles", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_07_26_142614) do
+  create_table "studies", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.integer "target_tempo"
+    t.integer "cur_tempo"
+    t.string "backing_track"
+    t.integer "style_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["style_id"], name: "index_studies_on_style_id"
+  end
+
+  create_table "styles", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "studies", "styles"
 end
