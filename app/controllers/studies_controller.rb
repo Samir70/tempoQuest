@@ -13,10 +13,12 @@ class StudiesController < ApplicationController
   # GET /studies/new
   def new
     @study = Study.new
+    @styles = Style.all.map {|el| [el.name, el.id]}
   end
-
+  
   # GET /studies/1/edit
   def edit
+    @styles = Style.all.map {|el| [el.name, el.id]}
   end
 
   # POST /studies or /studies.json
