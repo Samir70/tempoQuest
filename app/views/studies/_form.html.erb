@@ -38,7 +38,7 @@
 
   <div>
     <%= form.label :style_id, style: "display: block" %>
-    <%= form.select :style_id, style_options %>
+    <%= form.select :style_id, style_options.map {|el| [el.name, el.id]} %>
   </div>
 
   <div>
