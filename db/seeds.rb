@@ -15,6 +15,7 @@ puts("Seeded practise styles", dailyIncStyle, dailyIncStyle.name, dailyIncStyle.
 # had to make a table by hand otherwise get exception: 
 # no such table: main.PractiseStyles 
 # So redid the scaffold without camelCase
+# Ruby convention: class names as camelCase but other things as snake_case
 # > rails db:rollback
 # > rails destroy scaffold PractiseStyle
 # > rails destroy scaffold Study
